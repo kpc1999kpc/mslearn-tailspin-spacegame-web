@@ -2,7 +2,7 @@ trigger:
 - '*'
 
 pool:
-  vmImage: 'ubuntu-22.00'
+  vmImage: 'ubuntu-22.04'
   demands:
   - npm
 
@@ -52,3 +52,4 @@ steps:
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact: drop'
   condition: succeeded()
+  
